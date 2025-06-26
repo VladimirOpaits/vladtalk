@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Комментарии</title>
+    <style>
+        body { font-family: Arial; max-width: 800px; margin: 0 auto; padding: 20px; }
+        #comment-form { margin-bottom: 20px; }
+        textarea { width: 100%; min-height: 100px; }
+        input, textarea, button { margin: 5px 0; padding: 8px; }
+        button { background: #4CAF50; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Добавить комментарий</h1>
+    
+    <form id="comment-form">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <textarea name="comment" placeholder="Ваш комментарий" required></textarea>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <h2>Комментарии</h2>
+    <div id="comments-list">Загрузка...</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
