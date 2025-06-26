@@ -10,7 +10,7 @@ document.getElementById("comment-form").addEventListener("submit", async (e) => 
 
     // Отправляем POST-запрос
     try {
-        const response = await fetch("http://127.0.0.1:8000/comments", {
+        const response = await fetch("https://webprodigy.fly.dev/comments", {
             method: "POST",
             headers: { 
                 "Content-Type": "application/json",
@@ -38,7 +38,7 @@ document.getElementById("comment-form").addEventListener("submit", async (e) => 
 // 2. Загрузка комментариев
 async function loadComments() {
     try {
-        const response = await fetch("http://127.0.0.1:8000/comments");
+        const response = await fetch("https://webprodigy.fly.dev/comments");
         
         if (!response.ok) {
             throw new Error("Не удалось загрузить комментарии");
